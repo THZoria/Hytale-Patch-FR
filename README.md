@@ -7,7 +7,8 @@ Une traduction française pour **Hytale Early Access**.
 <img width="1536" height="1024" alt="content" src="https://github.com/user-attachments/assets/51e99b60-2108-46dc-b038-1f2da5de6dd9" />
 
 [![Discord](https://img.shields.io/discord/454099185416011776?label=Rejoindre%20le%20Discord&logo=discord&logoColor=white&style=for-the-badge)](https://discord.sighya.fr) <br>
-[![Télécharger v1.0.0](https://img.shields.io/badge/Download-v1.0.0-blue)](https://github.com/THZoria/Hytale-Patch-FR/releases/tag/1.0.0)
+[![Dernière version](https://img.shields.io/github/v/release/THZoria/Hytale-Patch-FR?label=Dernière%20Version&color=05c09a&style=for-the-badge)](https://github.com/THZoria/Hytale-Patch-FR/releases/latest)
+[![Téléchargements](https://img.shields.io/github/downloads/THZoria/Hytale-Patch-FR/total?label=Téléchargements&color=blue&style=for-the-badge)](https://github.com/THZoria/Hytale-Patch-FR/releases)
 
 ---
 
@@ -30,7 +31,7 @@ Cependant, l’objectif de ce projet est de réviser progressivement l’ensembl
 ## 📦 Installation (Téléchargement ZIP)
 
 1. Téléchargez l’archive ZIP et extrayez-la à l’emplacement de votre choix. <br>
-👉 Télécharge la **[version 1.0.0](https://github.com/THZoria/Hytale-Patch-FR/releases/tag/1.0.0)** du patch.
+👉 Télécharge la **[Latest](https://github.com/THZoria/Hytale-Patch-FR/releases/latest)** du patch.
 2. Copiez le dossier nommé **`install`**.
 3. Collez-le dans le répertoire suivant : %appdata%\Hytale
 4. Acceptez le remplacement des fichiers existants si demandé.
