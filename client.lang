@@ -637,7 +637,7 @@ builderTools.legend.MachinimaTool.Page4.EditFrameTime = Modifier le moment d’a
 builderTools.legend.MachinimaTool.Page4.AdjustFrameTime = Avancer ou retarder légèrement le timing de l’image clé
 
 builderTools.legend.MachinimaTool.Page5.Title = Interactions à la souris
-builderTools.legend.MachinimaTool.Page5.Description = Cliquez sur les nœuds d’images clés dans le monde pour interagir :
+builderTools.legend.MachinimaTool.Page5.Description = Cliquez sur les noeuds d’images clés dans le monde pour interagir :
 builderTools.legend.MachinimaTool.Page5.SelectKeyframe = Sélectionner une image clé (entrer en mode déplacement libre)
 builderTools.legend.MachinimaTool.Page5.JumpToKeyframe = Définir comme active et se déplacer à l’image correspondante
 builderTools.legend.MachinimaTool.Page5.GizmoTitle = Commandes du gizmo :
@@ -661,7 +661,7 @@ builderTools.legend.MachinimaTool.Page6.SceneModeDesc = Déplace l’origine de 
 builderTools.legend.MachinimaTool.Page7.Title = Affichage et origine
 builderTools.legend.MachinimaTool.Page7.DisplayTitle = Options d’affichage :
 builderTools.legend.MachinimaTool.Page7.ToggleDisplay = Afficher/Masquer la superposition de l’éditeur
-builderTools.legend.MachinimaTool.Page7.TogglePathNodes = Afficher/Masquer les nœuds de trajectoire
+builderTools.legend.MachinimaTool.Page7.TogglePathNodes = Afficher/Masquer les noeuds de trajectoire
 builderTools.legend.MachinimaTool.Page7.ToggleCamera = Activer/Désactiver l’acteur caméra
 builderTools.legend.MachinimaTool.Page7.ToggleFrustum = Afficher/Masquer le frustum de la caméra
 builderTools.legend.MachinimaTool.Page7.OriginTitle = Commandes de l’origine de la scène :
@@ -935,8 +935,8 @@ contentCreation.navigation.blockbench = Éditeur de modèles
 contentCreation.navigation.blockbench.tooltipTitle = Lancer Blockbench (éditeur de modèles)
 contentCreation.navigation.blockbench.tooltipDesc = Créez vos propres modèles et animations pour Hytale.
 contentCreation.navigation.nodeeditor = Éditeur de noeuds d’assets
-contentCreation.navigation.nodeeditor.tooltipTitle = Lancer l’éditeur de nœuds d’assets
-contentCreation.navigation.nodeeditor.tooltipDesc = Modifiez des assets à l’aide d’un éditeur visuel basé sur des nœuds.
+contentCreation.navigation.nodeeditor.tooltipTitle = Lancer l’éditeur de noeuds d’assets
+contentCreation.navigation.nodeeditor.tooltipDesc = Modifiez des assets à l’aide d’un éditeur visuel basé sur des noeuds.
 contentCreation.navigation.machinima = Machinima
 contentCreation.navigation.machinima.tooltipTitle = Ouvrir l’éditeur Machinima
 contentCreation.navigation.machinima.tooltipDesc = Créez vos propres films dans Hytale grâce à l’éditeur Machinima.
@@ -947,7 +947,7 @@ contentCreation.navigation.buildertools.tooltipDesc = Outils d’édition de blo
 Modifiez les blocs de votre monde à l’aide des outils d’édition disponibles dans les onglets d’outils de l’inventaire créatif.
 
 contentCreation.modal.nodeeditor.nonsupported.title = Plateforme non prise en charge
-contentCreation.modal.nodeeditor.nonsupported.text = L’éditeur de nœuds n’est actuellement pas pris en charge sur votre plateforme.\n\nPour le moment, seule la version Windows est supportée, et nous travaillons à étendre cette fonctionnalité à toutes les plateformes PC.
+contentCreation.modal.nodeeditor.nonsupported.text = L’éditeur de noeuds n’est actuellement pas pris en charge sur votre plateforme.\n\nPour le moment, seule la version Windows est supportée, et nous travaillons à étendre cette fonctionnalité à toutes les plateformes PC.
 
 contentCreation.navigation.worldtools = Monde
 contentCreation.navigation.worldtools.prefabEditor = Éditeur de prefabs
