@@ -33,8 +33,10 @@ Cependant, l’objectif de ce projet est de réviser progressivement l’ensembl
 2. Copiez le dossier nommé **`install`**.
 3. Collez-le dans le répertoire suivant : %appdata%\Hytale
 4. Acceptez le remplacement des fichiers existants si demandé.
-5. Lancez **Hytale** — le jeu devrait maintenant être en **français**.  
-Si nécessaire, sélectionnez **Français (FR)** dans les paramètres du jeu.
+5. Lancez **Hytale** — le jeu devrait maintenant être en **français**.
+
+Si nécessaire, sélectionnez **Français (FR)** dans les paramètres du jeu. <br>
+Si vous avez le moindre problème, n'hésite pas à rejoindre notre discord : [SigHya](https://discord.sighya.fr)
 
 ---
 
