@@ -5,7 +5,7 @@ Une traduction française pour **Hytale Early Access**.
 ---
 
 <img width="1536" height="1024" alt="content" src="https://github.com/user-attachments/assets/51e99b60-2108-46dc-b038-1f2da5de6dd9" />
-[![Discord](https://img.shields.io/badge/Discord-Rejoindre-5865F2)](https://discord.sighya.fr)
+[![Discord](https://img.shields.io/badge/Discord-Rejoindre-5865F2?logo=discord&logoColor=white&style=for-the-badge)](https://discord.sighya.fr)
 
 ---
 
