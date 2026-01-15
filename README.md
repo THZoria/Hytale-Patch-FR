@@ -20,11 +20,14 @@ Cependant, l’objectif de ce projet est de réviser progressivement l’ensembl
 - 🎨 Logo réalisé par **Inovadiax** — merci à lui !
 - 📦 Tous les objets et textes en jeu ont été traduits
 
+[![Télécharger v1.0.0](https://img.shields.io/badge/Download-v1.0.0-blue)](https://github.com/THZoria/Hytale-Patch-FR/releases/tag/1.0.0)
+
 ---
 
 ## 📦 Installation (Téléchargement ZIP)
 
 1. Téléchargez l’archive ZIP et extrayez-la à l’emplacement de votre choix.
+👉 Télécharge la **[version 1.0.0 « Initial Release »](https://github.com/THZoria/Hytale-Patch-FR/releases/tag/1.0.0)** du patch.
 2. Copiez le dossier nommé **`install`**.
 3. Collez-le dans le répertoire suivant : %appdata%\Hytale
 4. Acceptez le remplacement des fichiers existants si demandé.
