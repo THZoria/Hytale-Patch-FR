@@ -26,7 +26,7 @@ Cependant, l’objectif de ce projet est de réviser progressivement l’ensembl
 
 ## 📦 Installation (Téléchargement ZIP)
 
-1. Téléchargez l’archive ZIP et extrayez-la à l’emplacement de votre choix.
+1. Téléchargez l’archive ZIP et extrayez-la à l’emplacement de votre choix. <br>
 👉 Télécharge la **[version 1.0.0](https://github.com/THZoria/Hytale-Patch-FR/releases/tag/1.0.0)** du patch.
 2. Copiez le dossier nommé **`install`**.
 3. Collez-le dans le répertoire suivant : %appdata%\Hytale
