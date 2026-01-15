@@ -4,6 +4,10 @@ Une traduction française pour **Hytale Early Access**.
 
 ---
 
+<img width="1536" height="1024" alt="content" src="https://github.com/user-attachments/assets/51e99b60-2108-46dc-b038-1f2da5de6dd9" />
+
+---
+
 ## ⚠️ Important – Installation manuelle requise
 
 > **Les fichiers de langue fonctionnent différemment des mods classiques.  
