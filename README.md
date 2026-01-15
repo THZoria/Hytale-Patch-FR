@@ -6,7 +6,8 @@ Une traduction française pour **Hytale Early Access**.
 
 <img width="1536" height="1024" alt="content" src="https://github.com/user-attachments/assets/51e99b60-2108-46dc-b038-1f2da5de6dd9" />
 
-[![Discord](https://img.shields.io/discord/454099185416011776?label=Rejoindre%20le%20Discord&logo=discord&logoColor=white&style=for-the-badge)](https://discord.sighya.fr)
+[![Discord](https://img.shields.io/discord/454099185416011776?label=Rejoindre%20le%20Discord&logo=discord&logoColor=white&style=for-the-badge)](https://discord.sighya.fr) <br>
+[![Télécharger v1.0.0](https://img.shields.io/badge/Download-v1.0.0-blue)](https://github.com/THZoria/Hytale-Patch-FR/releases/tag/1.0.0)
 
 ---
 
@@ -22,7 +23,7 @@ Cependant, l’objectif de ce projet est de réviser progressivement l’ensembl
 - 🎨 Logo réalisé par **Inovadiax** — merci à lui !
 - 📦 Tous les objets et textes en jeu ont été traduits
 
-[![Télécharger v1.0.0](https://img.shields.io/badge/Download-v1.0.0-blue)](https://github.com/THZoria/Hytale-Patch-FR/releases/tag/1.0.0)
+
 
 ---
 
