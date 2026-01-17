@@ -656,8 +656,11 @@ commands.paste.desc = Coller le contenu de votre presse-papiers
 commands.pos1.desc = Définir la première position de votre sélection
 commands.pos2.desc = Définir la deuxième position de votre sélection
 commands.redo.desc = Rétablir le dernier changement
+commands.clearEntities.desc = Supprimer toutes les entités dans la sélection actuelle
+commands.clearEntities.noSelection = Vous n'avez rien sélectionné !
 commands.repairfillers.desc = Réparer les blocs de remplissage (fillers) dans la sélection
 commands.replace.desc = Remplacer une sélection de blocs spécifiques par un autre bloc
+commands.clearEntities.cleared = {count, plural, one {1 entité supprimée} other {{count, number} entités supprimées}} de la sélection
 commands.replace.from.desc = Les types de blocs à remplacer (séparés par des virgules) ou un motif Regex
 commands.replace.toBlock.desc = Le type de bloc par lequel remplacer
 commands.replace.regex.desc = Utiliser la correspondance Regex (l'argument "From" est traité comme un motif Regex)
@@ -807,7 +810,11 @@ commands.editprefab.load.axis.desc = L'axe le long duquel plusieurs Prefabs sero
 commands.editprefab.load.axis.default = L'axe X
 commands.editprefab.load.path.desc = Le répertoire de base pour les assets de Prefab
 commands.editprefab.load.path.default.desc = Le répertoire de base des Prefabs du serveur
+commands.memories.setCount.desc = [TMP] Définir le nombre de mémoires enregistrées pour le test
 commands.editprefab.load.alignment.desc = Comment aligner la position des Prefabs (soit par les faces avant, soit par les ancres)
+commands.memories.setCount.success = [TMP] Nombre de souvenirs enregistrés défini sur {actual, number} (demandé : {requested, number})
+commands.memories.setCount.count.desc = [TMP] Le nombre de souvenirs à enregistrer
+commands.memories.setCount.invalid = [TMP] Nombre invalide. Doit être supérieur ou égal à 0.
 commands.editprefab.load.alignment.default.desc = Aligner les ancres
 commands.editprefab.load.recursive.desc = Parcourir récursivement tous les sous-répertoires pour trouver les Prefabs à charger
 commands.editprefab.load.error.prefabNotFound = Aucun Prefab trouvé au chemin spécifié : {path}
@@ -1447,9 +1454,13 @@ commands.profiler.unableConfigurePath = [Profiler] Impossible de configurer le c
 commands.profiler.notFound = [Profiler] Impossible de trouver le profiler. Exécutez /profile download pour le télécharger.
 commands.profiler.alreadyAttached = [Profiler] Le profiler est déjà attaché !
 commands.profiler.attaching = [Profiler] Attachement du profiler !
+commands.parsing.argtype.playerUuidLookup.name = UUID/Nom d'utilisateur du joueur (avec recherche)
+commands.parsing.argtype.playerUuidLookup.usage = Un UUID ou un nom d'utilisateur de joueur. S'il n'est pas trouvé localement, une recherche à distance sera effectuée via le Service de Profil (Profile Service).
 commands.profiler.attached = [Profiler] Profiler attaché !
 commands.profiler.processReturned = [Profiler] Le processus d'attachement du profiler a renvoyé : {process}
 commands.profiler.warning = [Profiler] Avertissement : {warning}
+commands.parsing.argtype.playerUuidLookup.notFound = Le joueur '{input}' n'a pas été trouvé localement ou via la recherche à distance.
+commands.parsing.argtype.playerUuidLookup.lookupError = Échec de la recherche de '{input}' : {error}
 commands.profiler.success = [Profiler] {success}
 commands.profiler.failure = [Profiler] {failure}
 commands.profiler.start = [Profiler] {start}
@@ -6057,6 +6068,37 @@ items.Wood_Amber_Branch_Short.name = Branche d'ambre - Courte
 items.Wood_Amber_Roots.name = Racines d'ambre
 items.Wood_Amber_Trunk.name = Bloc de bois d'ambre
 items.Wood_Amber_Trunk_Full.name = Tronc d'ambre
+items.Wood_Amber_Trunk.description = Bois doré
+items.Wood_Ash_Trunk.description = Bois dur
+items.Wood_Aspen_Trunk.description = Bois tendre
+items.Wood_Azure_Trunk.description = Azuré
+items.Wood_Bamboo_Trunk.description = Bois tropical
+items.Wood_Banyan_Trunk.description = Bois tendre
+items.Wood_Beech_Trunk.description = Bois tendre
+items.Wood_Birch_Trunk.description = Bois clair
+items.Wood_Bottletree_Trunk.description = Bois sec
+items.Wood_Burnt_Trunk.description = Bois noir
+items.Wood_Camphor_Trunk.description = Bois clair
+items.Wood_Cedar_Trunk.description = Bois sombre
+items.Wood_Crystal_Trunk.description = Cristal
+items.Wood_Dry_Trunk.description = Bois sec
+items.Wood_Fig_Blue_Trunk.description = Bois rouge
+items.Wood_Fir_Trunk.description = Bois dur
+items.Wood_Fire_Trunk.description = Bois noir
+items.Wood_Gumboab_Trunk.description = Bois clair
+items.Wood_Ice_Trunk.description = Glace
+items.Wood_Jungle_Trunk.description = Bois vert
+items.Wood_Maple_Trunk.description = Bois rouge
+items.Wood_Oak_Trunk.description = Bois dur
+items.Wood_Palm_Trunk.description = Bois doré
+items.Wood_Palo_Trunk.description = Bois vert
+items.Wood_Petrified_Trunk.description = Bois mort
+items.Wood_Poisoned_Trunk.description = Bois mort
+items.Wood_Redwood_Trunk.description = Bois rouge
+items.Wood_Sallow_Trunk.description = Bois doré
+items.Wood_Spiral_Trunk.description = Spiral
+items.Wood_Windwillow_Trunk.description = Saule des vents
+items.Wood_Wisteria_Wild_Trunk.description = Bois sombre
 items.Wood_Ash_Branch_Corner.name = Branche de frêne - Coin
 items.Wood_Ash_Branch_Long.name = Branche de frêne - Longue
 items.Wood_Ash_Branch_Short.name = Branche de frêne - Courte
@@ -6570,8 +6612,7 @@ items.Recipe_Food_Salad_Caesar.name = [TMP] Recette : Salade César
 items.Recipe_Food_Salad_Caesar.description = [TMP] Enseigne la recette de : <item is="Food_Salad_Caesar"/>.\n\nRestaure immédiatement <color is="#ffffff">15%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé III</color>\n• <color is="#ffffff">Boost d'endurance III</color>\n\nDurée : <color is="#ffffff">6:00</color>
 items.Food_Pie_Pumpkin.description = [TMP] Restaure immédiatement <color is="#ffffff">15%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé III</color>\n• <color is="#ffffff">Boost d'endurance III</color>\n\nDurée : <color is="#ffffff">6:00</color>
 items.Food_Wildmeat_Cooked.description = [TMP] Restaure immédiatement <color is="#ffffff">10%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé II</color>\n• <color is="#ffffff">Boost de santé II</color>\n\nDurée : <color is="#ffffff">2:30</color>
-items.Food_Fish_Grilled.description = [TMP] Restaure immédiatement <color is="#ffffff">10%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé II</color>\n• <color is="#ffffff">Boost de santé II</color>\n\nDurée : <color is="#ffffff">2:30</color>
-items.Food_Kebab_Meat.description = [TMP] Restaure immédiatement <color is="#ffffff">10%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé II</color>\n• <color is="#ffffff">Boost de santé II</color>\n\nDurée : <color is="#ffffff">2:30</color>
+items.Food_Fish_Grilled.descriptioWood_Amber_Trunk= [TMP] Restaure immédiatement <color is="#ffffff">10%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé II</color>\n• <color is="#ffffff">Boost de santé II</color>\n\nDurée : <color is="#ffffff">2:30</color>
 items.Food_Pie_Meat.description = [TMP] Restaure immédiatement <color is="#ffffff">15%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé III</color>\n• <color is="#ffffff">Boost de santé III</color>\n\nDurée : <color is="#ffffff">6:00</color>
 items.Food_Wildmeat_Raw.description = [TMP] Restaure immédiatement <color is="#ffffff">5%</color> de santé.
 items.Food_Fish_Raw.description = [TMP] Restaure immédiatement <color is="#ffffff">5%</color> de santé.
@@ -6581,6 +6622,13 @@ items.Food_Beef_Raw.description = [TMP] Restaure immédiatement <color is="#ffff
 items.Food_Bread.description = [TMP] Restaure immédiatement <color is="#ffffff">15%</color> de santé.
 items.Food_Popcorn.description = [TMP] Restaure immédiatement <color is="#ffffff">15%</color> de santé.
 items.Food_Cheese.description = [TMP] Restaure immédiatement <color is="#ffffff">15%</color> de santé.
+items.Plant_Fruit_Azure.description = Restaure instantanément <color is="#ffffff">5%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé I</color>\n\nDurée : <color is="#ffffff">0:45</color>
+items.Plant_Fruit_Coconut.description = Restaure instantanément <color is="#ffffff">5%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé I</color>\n\nDurée : <color is="#ffffff">0:45</color>
+items.Plant_Fruit_Mango.description = Restaure instantanément <color is="#ffffff">5%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé I</color>\n\nDurée : <color is="#ffffff">0:45</color>
+items.Plant_Fruit_Pinkberry.description = Restaure instantanément <color is="#ffffff">5%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé I</color>\n\nDurée : <color is="#ffffff">0:45</color>
+items.Plant_Fruit_Poison.description = Restaure instantanément <color is="#ffffff">5%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé I</color>\n\nDurée : <color is="#ffffff">0:45</color>
+items.Plant_Fruit_Spiral.description = Restaure instantanément <color is="#ffffff">5%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé I</color>\n\nDurée : <color is="#ffffff">0:45</color>
+items.Plant_Fruit_Windwillow.description = Restaure instantanément <color is="#ffffff">5%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé I</color>\n\nDurée : <color is="#ffffff">0:45</color>
 
 # === map ===
 
@@ -6660,6 +6708,12 @@ memories.general.totalCollected = Total collecté :
 memories.general.foundIn = Trouvé à {location}, {time}
 
 memories.names.Deer = Cerf
+
+memories.unlock.title = Vous avez débloqué la fonction Souvenirs !
+memories.unlock.bullet1 = La malédiction du Néant garde Orbis prisonnière, mais il existe peut-être un moyen de la briser.
+memories.unlock.bullet2 = Une divinité repose au sein de ce Coeur d'Orbis ; recherchez les souvenirs des innombrables créatures d'Orbis et enregistrez-les ici pour restaurer sa volonté.
+memories.unlock.bullet3 = Votre inventaire peut désormais stocker un nombre limité de souvenirs dans une section spéciale. \nRapportez-les au Coeur d'Orbis pour débloquer diverses récompenses.
+memories.unlock.discoverMemories = Découvrir des souvenirs
 
 # === modules ===
 
@@ -6883,6 +6937,7 @@ npcRoles.Jellyfish_Blue.name = Méduse bleue
 npcRoles.Jellyfish_Cyan.name = Méduse turquoise
 npcRoles.Jellyfish_Green.name = Méduse verte
 npcRoles.Jellyfish_Man_Of_War.name = Physalie (Galère portugaise)
+
 npcRoles.Jellyfish_Red.name = Méduse rouge
 npcRoles.Jellyfish_Yellow.name = Méduse jaune
 npcRoles.Klops_Gentleman.name = Klops gentleman
