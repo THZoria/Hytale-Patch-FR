@@ -650,7 +650,7 @@ Maintenez ALT pour ignorer l’alignement aux surfaces.
 
 builderTools.legend.MachinimaTool.Page6.Title = Modes de sélection
 builderTools.legend.MachinimaTool.Page6.Description = Les modes de sélection déterminent ce qui est déplacé lors de l’utilisation des outils de transformation. Choisissez le mode approprié selon ce que vous souhaitez repositionner.
-builderTools.legend.MachinimaTool.Page6.CycleMode = Parcourir les modes de sélection
+builderTools.legend.MachinimaTool.Psage6.CycleMode = Parcourir les modes de sélection
 builderTools.legend.MachinimaTool.Page6.KeyframeModeTitle = Mode image clé (par défaut)
 builderTools.legend.MachinimaTool.Page6.KeyframeModeDesc = Déplace uniquement l’image clé sélectionnée. Utilisez ce mode pour ajuster précisément des points individuels le long de la trajectoire d’un acteur sans affecter les autres images clés.
 builderTools.legend.MachinimaTool.Page6.ActorModeTitle = Mode acteur
@@ -883,20 +883,6 @@ builderTools.panel.npcStamina = Endurance
 builderTools.panel.npcSpeed = Vitesse
 builderTools.panel.npcTarget = Cible
 builderTools.panel.npcTarget.none = Aucune
-
-# === codex ===
-codex.title = Codex
-
-codex.movement = Déplacements
-
-codex.mantling = Escalade
-codex.mantling.description = Face à un obstacle plus haut que vous, avancez et appuyez sur Sauter pour l’escalader.
-
-codex.sliding = Glissade
-codex.sliding.description = En sprint, appuyez sur la touche « Accroupir » pour glisser.
-
-codex.rolling = Roulade
-codex.rolling.description = En chute, maintenez la touche « Accroupir » pour effectuer une roulade et annuler les dégâts de chute.
 
 # === confirmQuitOverlay ===
 confirmQuitOverlay.title = Quitter le jeu
@@ -1608,7 +1594,7 @@ mainMenu.assetEditor.errorModal.openSettingsButton = Ouvrir les paramètres
 
 # Early Access Panel
 mainMenu.earlyAccessPanel.title = Accès anticipé\nAvertissement
-mainMenu.earlyAccessPanel.text = Il s’agit d’un accès anticipé à Hytale ; le jeu est encore en cours de développement. Attendez-vous à des bugs et à des changements pendant que nous travaillons à la sortie officielle.\n\nMerci pour votre soutien !
+mainMenu.earlyAccessPanel.text = Il s’agit d’un accès anticipé à Hytale ; le jeu est encore en cours de développement. Attendez-vous à des bugs et à des changements pendant que nous travaillons à la sortie officielle.\n\nMerci pour votre soutien !\n\nPatch Français 1.0.2 by SaoriYuki
 
 # === map ===
 map.title = Carte du monde
@@ -2284,3 +2270,18 @@ feedback.success.bugreport = Votre rapport de bug a été envoyé avec succès. 
 feedback.success.submitMore = Envoyer un autre message
 
 bugReportButton.tooltip = Signaler un bug ou envoyer un retour
+
+# === patchline ===
+# Les patchlines permettent la publication anticipée de contenu afin d'aider les joueurs à tester les nouvelles fonctionnalités.
+
+patchline.launchNotification.title = Patchline avant sortie
+patchline.launchNotification.text = Vous utilisez une version prerelease d'Hytale.\n\n\
+    Cette version peut contenir des fonctionnalités expérimentales et des bogues.\n\n\
+    Vos commentaires nous aident à améliorer le jeu !
+
+patchline.worldWarning.title = Avertissement Patchline
+patchline.worldWarning.text = Vous êtes sur le point d'ouvrir un monde en utilisant une version différente\n\n\
+    L'ouverture de ce monde peut entraîner des changements susceptibles d'affecter votre sauvegarde.\n\n\
+    Nous vous recommandons de créer une copie de sauvegarde avant de continuer.
+patchline.worldWarning.openAnyway = Ouvrir quand même
+patchline.worldWarning.duplicateWorld = Dupliquer le monde
