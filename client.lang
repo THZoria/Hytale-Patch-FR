@@ -884,6 +884,20 @@ builderTools.panel.npcSpeed = Vitesse
 builderTools.panel.npcTarget = Cible
 builderTools.panel.npcTarget.none = Aucune
 
+# === codex ===
+codex.title = Codex
+
+codex.movement = Déplacements
+
+codex.mantling = Escalade
+codex.mantling.description = Face à un obstacle plus haut que vous, avancez et appuyez sur Sauter pour l’escalader.
+
+codex.sliding = Glissade
+codex.sliding.description = En sprint, appuyez sur la touche « Accroupir » pour glisser.
+
+codex.rolling = Roulade
+codex.rolling.description = En chute, maintenez la touche « Accroupir » pour effectuer une roulade et annuler les dégâts de chute.
+
 # === confirmQuitOverlay ===
 confirmQuitOverlay.title = Quitter le jeu
 confirmQuitOverlay.text = Êtes-vous sûr de vouloir quitter ?
@@ -1594,7 +1608,7 @@ mainMenu.assetEditor.errorModal.openSettingsButton = Ouvrir les paramètres
 
 # Early Access Panel
 mainMenu.earlyAccessPanel.title = Accès anticipé\nAvertissement
-mainMenu.earlyAccessPanel.text = Il s’agit d’un accès anticipé à Hytale ; le jeu est encore en cours de développement. Attendez-vous à des bugs et à des changements pendant que nous travaillons à la sortie officielle.\n\nMerci pour votre soutien !\n\nPatch Français 1.0.2 by SaoriYuki
+mainMenu.earlyAccessPanel.text = Il s’agit d’un accès anticipé à Hytale ; le jeu est encore en cours de développement. Attendez-vous à des bugs et à des changements pendant que nous travaillons à la sortie officielle.\n\nMerci pour votre soutien !\n\nPatch Français 1.0.3 by SaoriYuki
 
 # === map ===
 map.title = Carte du monde
@@ -2271,17 +2285,99 @@ feedback.success.submitMore = Envoyer un autre message
 
 bugReportButton.tooltip = Signaler un bug ou envoyer un retour
 
-# === patchline ===
-# Les patchlines permettent la publication anticipée de contenu afin d'aider les joueurs à tester les nouvelles fonctionnalités.
+# --- Cosmetics Colors ---
+cosmetics.color.skinTone = Teint
+cosmetics.color.PitchBlack = Noir profond
+cosmetics.color.Black = Noir
+cosmetics.color.BrownDarker = Marron très foncé
+cosmetics.color.BrownDark = Marron foncé
+cosmetics.color.BrownSemiDark = Marron semi-foncé
+cosmetics.color.Brown = Marron
+cosmetics.color.BrownSemiLight = Marron semi-clair
+cosmetics.color.BrownLight = Marron clair
+cosmetics.color.Blond = Blond
+cosmetics.color.BlondPlatinum = Blond platine
+cosmetics.color.BlondSand = Blond sable
+cosmetics.color.BlondCaramel = Blond caramel
+cosmetics.color.Copper = Cuivré
+cosmetics.color.Red = Rouge
+cosmetics.color.RedDark = Rouge foncé
+cosmetics.color.Pink = Rose
+cosmetics.color.PinkBerry = Rose baie
+cosmetics.color.Bubblegum = Bubblegum
+cosmetics.color.Purple = Violet
+cosmetics.color.Lavender = Lavande
+cosmetics.color.BlueDark = Bleu foncé
+cosmetics.color.Blue = Bleu
+cosmetics.color.BlueLight = Bleu clair
+cosmetics.color.Turquoise = Turquoise
+cosmetics.color.Green = Vert
+cosmetics.color.White = Blanc
+cosmetics.color.GreyAsh = Gris cendre
+cosmetics.color.Grey = Gris
+cosmetics.color.GreyPurple = Gris violacé
+cosmetics.color.Blue_Anthracite = Bleu anthracite
+cosmetics.color.Lime = Citron vert
+cosmetics.color.Orange = Orange
+cosmetics.color.Yellow = Jaune
+cosmetics.color.Violet = Violet
+cosmetics.color.BluePastel = Bleu pastel
+cosmetics.color.GreyDark = Gris foncé
+cosmetics.color.GreyLight = Gris clair
+cosmetics.color.GreyBlue = Bleu gris
+cosmetics.color.Marine_Blue = Bleu marine
+cosmetics.color.Maroon = Marron (Maroon)
+cosmetics.color.Blue_Night = Bleu nuit
+cosmetics.color.Turquoise_Dark = Turquoise foncé
+cosmetics.color.Orange_Tan = Orange tanné
+cosmetics.color.OrangePastel = Orange pastel
+cosmetics.color.PinkPastel = Rose pastel
+cosmetics.color.Cream = Crème
+cosmetics.color.Charcoal = Anthracite
+cosmetics.color.Carmin = Carmin
+cosmetics.color.PurplePastel = Violet pastel
+cosmetics.color.Beige = Beige
+cosmetics.color.Honey = Miel
+cosmetics.color.GreenLight = Vert clair
+cosmetics.color.Gold_Red = Or
+cosmetics.color.Silver_Blue = Argent
+cosmetics.color.Copper_Green = Cuivre
+cosmetics.color.Brass_Purple = Laiton
+cosmetics.color.Iron_Black = Fer
 
-patchline.launchNotification.title = Patchline avant sortie
-patchline.launchNotification.text = Vous utilisez une version prerelease d'Hytale.\n\n\
-    Cette version peut contenir des fonctionnalités expérimentales et des bogues.\n\n\
-    Vos commentaires nous aident à améliorer le jeu !
+# --- Disconnection Errors ---
+disconnection.error.rateLimited = Vous avez été limité en débit. Veuillez patienter un instant avant de réessayer.
+disconnection.error.authFailed = Échec de l'authentification. Veuillez redémarrer le jeu et réessayer.
+disconnection.error.notAuthenticated = Vous devez être connecté pour accéder aux serveurs multijoueurs.
+disconnection.error.timeout = Délai de connexion dépassé. Veuillez vérifier votre connexion internet et réessayer.
+disconnection.error.versionMismatch = Impossible de se connecter en raison d'une différence de version entre le client et le serveur.
+disconnection.error.clientOutdated = Votre client de jeu n'est pas à jour. Veuillez le mettre à jour pour vous connecter à ce serveur.
+disconnection.error.serverOutdated = Le serveur utilise une version plus ancienne et ne peut pas accepter votre connexion.
 
-patchline.worldWarning.title = Avertissement Patchline
-patchline.worldWarning.text = Vous êtes sur le point d'ouvrir un monde en utilisant une version différente\n\n\
-    L'ouverture de ce monde peut entraîner des changements susceptibles d'affecter votre sauvegarde.\n\n\
-    Nous vous recommandons de créer une copie de sauvegarde avant de continuer.
-patchline.worldWarning.openAnyway = Ouvrir quand même
-patchline.worldWarning.duplicateWorld = Dupliquer le monde
+# --- Inventory & Benches ---
+inventory.bench.chestInfo = [TMP] Les établis peuvent se lier aux coffres de stockage dans un rayon de {horizontalRadius, number}/{verticalRadius, number}, jusqu'à {maxChests, number} coffres peuvent être liés à une station.
+inventory.bench.chestLimitReached = [TMP] Cet établi a atteint sa limite maximale de coffres liés.
+inventory.character.tooltip.toggleHelmVisibility = [TMP] Basculer la visibilité du heaume
+inventory.character.tooltip.toggleCuirassVisibility = [TMP] Basculer la visibilité de la cuirasse
+inventory.character.tooltip.toggleGauntletsVisibility = [TMP] Basculer la visibilité des gantelets
+inventory.character.tooltip.togglePantsVisibility = [TMP] Basculer la visibilité des jambières
+
+# --- Map ---
+map.playerListEntry.tooltip.compass = [TMP] Suivre sur la boussole
+map.playerListEntry.tooltip.map = [TMP] Afficher sur la carte
+
+# --- Settings ---
+settings.groups.controls.inventory = [TMP] Inventaire
+settings.bindings.ContainerTakeAll = [TMP] Conteneur : Tout prendre
+settings.bindings.ContainerPutAll = [TMP] Conteneur : Tout déposer
+settings.bindings.ContainerQuickStack = [TMP] Conteneur : Pile rapide
+settings.bindings.ContainerSort = [TMP] Conteneur : Trier les objets
+settings.autoCrouchDownObstacle = [TMP] Descente automatique en s'accroupissant
+settings.autoCrouchDownObstacle.description = [TMP] Lorsque ce paramètre est activé, en étant accroupi, vous descendrez automatiquement les blocs d'une hauteur maximale de 1 unité.
+settings.enableOphidiophobiaMode = [TMP] Activer le mode ophidiophobie
+settings.enableOphidiophobiaMode.description = [TMP] Lorsqu'il est activé, les serpents seront remplacés par un autre modèle (par défaut, un ver).\n\n<b><color is="#b32626">Ce paramètre nécessite un retour au menu principal pour prendre effet !</color></b>
+settings.showFpsOverlay = Affichage des IPS (FPS)
+settings.showFpsOverlay.description = Affiche un compteur d'images par seconde en haut à droite de l'écran en permanence.
+settings.showFpsOverlay.off = Désactivé
+settings.showFpsOverlay.colorCoded = Activé (Code couleur)
+settings.showFpsOverlay.monochrome = Activé (Monochrome)
