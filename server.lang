@@ -116,6 +116,25 @@ assetTypes.GrowthModifierAsset.title = Modificateur de croissance
 assetTypes.TagPattern.title = Modèle de tag (Tag Pattern)
 assetTypes.ReachLocationMarkerAsset = Marqueur de destination atteinte
 
+# === Types de Ressources ===
+resourceType.Bone.name = Os
+resourceType.Books.name = Livres
+resourceType.Bricks.name = N'importe quelle brique
+resourceType.Charcoal.name = Charbon de bois
+resourceType.Fish.name = N'importe quel poisson
+resourceType.Flowers.name = N'importe quelle fleur
+resourceType.Fruits.name = N'importe quel type de fruit
+resourceType.Fuel.name = N'importe quel combustible
+resourceType.Meats.name = N'importe quel type de viande crue
+resourceType.Metal_Bars.name = N'importe quelle barre de métal
+resourceType.Mushrooms.name = N'importe quel type de champignon
+resourceType.Rock.name = N'importe quelle pierre
+resourceType.Sands.name = N'importe quel sable
+resourceType.Soils.name = N'importe quel sol
+resourceType.Vegetables.name = N'importe quel type de légume
+resourceType.Wood_All.name = N'importe quel bois
+resourceType.Wood_Planks.name = N'importe quelle planche
+
 # === barter ===
 
 # Shops
@@ -204,7 +223,6 @@ builderTools.tools.Line.args.cLineHeight.description = Hauteur du segment de lig
 builderTools.tools.Line.args.dLineShape.name = Forme
 builderTools.tools.Line.args.dLineShape.description = Forme de la section transversale de la ligne
 
-# Suite des formes de ligne (même que pinceau)
 builderTools.tools.Line.args.dLineShape.values.Cube = Cube
 builderTools.tools.Line.args.dLineShape.values.Sphere = Sphère
 builderTools.tools.Line.args.dLineShape.values.Cylinder = Cylindre
@@ -253,7 +271,6 @@ builderTools.tools.Boulder.name = Pinceau de rocher
 builderTools.tools.Boulder.description = Crée des rochers lors de l'utilisation
 builderTools.tools.Paint.args.aPrimaryBlocks.name = Blocs primaires
 builderTools.tools.Paint.args.aPrimaryBlocks.description = Blocs primaires constituant le rocher.
-builderTools.tools.Paint.args.bPrimaryBlocksDensity.name = Densité
 builderTools.tools.Paint.args.eDecorationBlocks.name = Blocs de décoration
 builderTools.tools.Paint.args.eDecorationBlocks.description = Blocs de décoration remplaçant les blocs au-dessus des blocs primaires du rocher.
 builderTools.tools.Paint.args.fDecorationBlocksDensity.name = Densité
@@ -267,10 +284,6 @@ builderTools.tools.Paint.args.iCirclePoints.name = Points du rocher
 builderTools.tools.Paint.args.iCirclePoints.description = Densité du rocher principal. Contrôle combien de sous-rochers sont placés autour pour le former.
 builderTools.tools.Paint.args.iCircleRadius.name = Rayon du rocher
 builderTools.tools.Paint.args.iCircleRadius.description = Contrôle l'espacement entre les points du rocher. Utilisez ceci pour élargir le rocher.
-builderTools.tools.Paint.args.iBoulderSize.name = Échelle de hauteur
-builderTools.tools.Paint.args.iBoulderSize.description = Échelle de hauteur du rocher. Le rocher s'agrandit en fonction de la largeur du pinceau.
-builderTools.tools.Paint.args.iJitter.name = Aléatoire de couche
-builderTools.tools.Paint.args.iJitter.description = Aléatoire entre les couches de hauteur du rocher.
 builderTools.tools.Paint.args.iJitterCircle.name = Aléatoire de rayon
 builderTools.tools.Paint.args.iJitterCircle.description = Aléatoire de chaque couche de hauteur.
 builderTools.tools.Paint.args.iSmoothness.name = Lissage
@@ -280,10 +293,6 @@ builderTools.tools.Forest.name = Pinceau de forêt
 builderTools.tools.Forest.description = Crée des forêts lors de l'utilisation
 builderTools.tools.Paint.args.GroundMainMaterial.name = Blocs primaires
 builderTools.tools.Paint.args.GroundMainMaterial.description = Blocs primaires constituant le sol de la forêt.
-builderTools.tools.Paint.args.zNumPrefabs.name = Nombre de décorations
-builderTools.tools.Paint.args.zNumPrefabs.description = Nombre de décorations de prefabs à placer.
-builderTools.tools.Paint.args.zPrefabSpacing.name = Espacement des décorations
-builderTools.tools.Paint.args.zPrefabSpacing.description = Espacement entre les décorations de prefabs.
 builderTools.tools.Paint.args.GroundMainMaterialDensity.name = Densité primaire
 builderTools.tools.Paint.args.GroundSecondaryMaterial.name = Blocs de bordure
 builderTools.tools.Paint.args.GroundSecondaryMaterial.description = Blocs formant une bordure autour des blocs primaires.
@@ -294,92 +303,8 @@ builderTools.tools.Paint.args.FoliageMaterialDensity.name = Densité de feuillag
 builderTools.tools.Paint.args.GroundPatchMaterial.name = Matériau de taches
 builderTools.tools.Paint.args.GroundPatchMaterial.description = Blocs pour ajouter des variations de taches au sol.
 builderTools.tools.Paint.args.GroundPatchMaterialDensity.name = Densité de taches
-builderTools.tools.Paint.args.TaDecorationOptions.name = Types de décorations
-builderTools.tools.Paint.args.TaDecorationOptions.description = Options de décoration utilisables au clic gauche (Rochers, Arbres, Feuillage).
-builderTools.tools.Paint.args.TaDecorationOptions.values.Boulders = Rochers
-builderTools.tools.Paint.args.TaDecorationOptions.values.Trees = Arbres
-builderTools.tools.Paint.args.TaDecorationOptions.values.Foliage = Feuillage
 
 # Types d'arbres
-builderTools.tools.Paint.args.TreesTypes.name = Types d'arbres
-builderTools.tools.Paint.args.TreesTypes.description = Différentes espèces d'arbres.
-builderTools.tools.Paint.args.TreesTypes.values.Amber = Ambre
-builderTools.tools.Paint.args.TreesTypes.values.Amber_Trunk = Tronc d'ambre
-builderTools.tools.Paint.args.TreesTypes.values.Ash = Frêne
-builderTools.tools.Paint.args.TreesTypes.values.Ash_Dead = Frêne mort
-builderTools.tools.Paint.args.TreesTypes.values.Ash_Moss = Frêne moussu
-builderTools.tools.Paint.args.TreesTypes.values.Ash_swamp = Frêne de marais
-builderTools.tools.Paint.args.TreesTypes.values.Ash_swamp_dead = Frêne de marais mort
-builderTools.tools.Paint.args.TreesTypes.values.Ash_twisted = Frêne tordu
-builderTools.tools.Paint.args.TreesTypes.values.Ash_twisted_Giant = Frêne tordu géant
-builderTools.tools.Paint.args.TreesTypes.values.Ash_twisted_Large = Frêne tordu grand
-builderTools.tools.Paint.args.TreesTypes.values.Aspen = Tremble
-builderTools.tools.Paint.args.TreesTypes.values.Autumn = Automne
-builderTools.tools.Paint.args.TreesTypes.values.Autumn_Stumps = Souches d'automne
-builderTools.tools.Paint.args.TreesTypes.values.Azure = Azur
-builderTools.tools.Paint.args.TreesTypes.values.Bamboo = Bambou
-builderTools.tools.Paint.args.TreesTypes.values.Beech = Hêtre
-builderTools.tools.Paint.args.TreesTypes.values.Beech_Dry = Hêtre sec
-builderTools.tools.Paint.args.TreesTypes.values.Beech_Mountain = Hêtre de montagne
-builderTools.tools.Paint.args.TreesTypes.values.Birch = Bouleau
-builderTools.tools.Paint.args.TreesTypes.values.Boab = Baobab
-builderTools.tools.Paint.args.TreesTypes.values.Burnt = Brûlé
-builderTools.tools.Paint.args.TreesTypes.values.Burnt_dead = Brûlé mort
-builderTools.tools.Paint.args.TreesTypes.values.Burnt_Roots = Racines brûlées
-builderTools.tools.Paint.args.TreesTypes.values.Cedar = Cèdre
-builderTools.tools.Paint.args.TreesTypes.values.Cedar_Burnt = Cèdre brûlé
-builderTools.tools.Paint.args.TreesTypes.values.Cedar_Logs = Troncs de cèdre
-builderTools.tools.Paint.args.TreesTypes.values.Crystal = Cristal
-builderTools.tools.Paint.args.TreesTypes.values.Dry = Sec
-builderTools.tools.Paint.args.TreesTypes.values.Dry_Dead = Sec mort
-builderTools.tools.Paint.args.TreesTypes.values.Fig_Blue = Figuier bleu
-builderTools.tools.Paint.args.TreesTypes.values.Fir = Sapin
-builderTools.tools.Paint.args.TreesTypes.values.Fire_Burning = Feu brûlant
-builderTools.tools.Paint.args.TreesTypes.values.Fir_Autumn = Sapin d'automne
-builderTools.tools.Paint.args.TreesTypes.values.Fir_Dead = Sapin mort
-builderTools.tools.Paint.args.TreesTypes.values.Fir_Dead_Large = Sapin mort grand
-builderTools.tools.Paint.args.TreesTypes.values.Fir_Logs = Troncs de sapin
-builderTools.tools.Paint.args.TreesTypes.values.Fir_red = Sapin rouge
-builderTools.tools.Paint.args.TreesTypes.values.Fir_Snow = Sapin enneigé
-builderTools.tools.Paint.args.TreesTypes.values.Gum = Eucalyptus (Gum)
-builderTools.tools.Paint.args.TreesTypes.values.Jungle = Jungle
-builderTools.tools.Paint.args.TreesTypes.values.Jungle1 = Jungle1
-builderTools.tools.Paint.args.TreesTypes.values.Jungle2 = Jungle2
-builderTools.tools.Paint.args.TreesTypes.values.Jungle3 = Jungle3
-builderTools.tools.Paint.args.TreesTypes.values.Jungle_Canopy_Lower = Canopée de jungle basse
-builderTools.tools.Paint.args.TreesTypes.values.Jungle_Canopy_Middle = Canopée de jungle moyenne
-builderTools.tools.Paint.args.TreesTypes.values.Jungle_Canopy_Upper = Canopée de jungle haute
-builderTools.tools.Paint.args.TreesTypes.values.Jungle_Crystal = Jungle cristal
-builderTools.tools.Paint.args.TreesTypes.values.Jungle_Crystal_Red = Jungle cristal rouge
-builderTools.tools.Paint.args.TreesTypes.values.Jungle_Ferns = Fougères de jungle
-builderTools.tools.Paint.args.TreesTypes.values.Jungle_Island1 = Jungle île1
-builderTools.tools.Paint.args.TreesTypes.values.Jungle_Island2 = Jungle île2
-builderTools.tools.Paint.args.TreesTypes.values.Jungle_Mushroom = Champignon de jungle
-builderTools.tools.Paint.args.TreesTypes.values.Logs = Troncs
-builderTools.tools.Paint.args.TreesTypes.values.Maple = Érable
-builderTools.tools.Paint.args.TreesTypes.values.Maple_Stumps = Souches d'érable
-builderTools.tools.Paint.args.TreesTypes.values.Mushroom = Champignon
-builderTools.tools.Paint.args.TreesTypes.values.Oak = Chêne
-builderTools.tools.Paint.args.TreesTypes.values.Oak_Moss = Chêne moussu
-builderTools.tools.Paint.args.TreesTypes.values.Oak_Stumps = Souches de chêne
-builderTools.tools.Paint.args.TreesTypes.values.Palm = Palmier
-builderTools.tools.Paint.args.TreesTypes.values.Palm_Green = Palmier vert
-builderTools.tools.Paint.args.TreesTypes.values.Palo = Palo
-builderTools.tools.Paint.args.TreesTypes.values.Petrified = Pétrifié
-builderTools.tools.Paint.args.TreesTypes.values.Petrified_Coral_Bulbs = Bulbes de corail pétrifiés
-builderTools.tools.Paint.args.TreesTypes.values.Petrified_Dead = Pétrifié mort
-builderTools.tools.Paint.args.TreesTypes.values.Petrified_Logs = Troncs pétrifiés
-builderTools.tools.Paint.args.TreesTypes.values.Poisoned = Empoisonné
-builderTools.tools.Paint.args.TreesTypes.values.Redwood = Séquoia
-builderTools.tools.Paint.args.TreesTypes.values.Redwood_Logs = Troncs de séquoia
-builderTools.tools.Paint.args.TreesTypes.values.Redwood_Stumps = Souches de séquoia
-builderTools.tools.Paint.args.TreesTypes.values.Rocks = Rochers
-builderTools.tools.Paint.args.TreesTypes.values.Sallow = Saule (Sallow)
-builderTools.tools.Paint.args.TreesTypes.values.Silver = Argenté
-builderTools.tools.Paint.args.TreesTypes.values.Stormbark_Stumps = Souches d'écorce d'orage
-builderTools.tools.Paint.args.TreesTypes.values.Willow = Saule
-builderTools.tools.Paint.args.TreesTypes.values.Wisteria = Glycine (Wisteria)
-builderTools.tools.Paint.args.TreesTypes.values.Zone5 = Zone5
 
 builderTools.tools.Grass.name = Pinceau d'herbe
 builderTools.tools.Grass.description = Permet à l'utilisateur de peindre de l'herbe sur le terrain
@@ -387,8 +312,6 @@ builderTools.tools.GrassPath.name = Pinceau de sentier herbeux
 builderTools.tools.GrassPath.description = Permet de peindre des sentiers d'herbe sur le terrain
 builderTools.tools.Hotsprings.name = Pinceau de sources chaudes
 builderTools.tools.Hotsprings.description = Permet de peindre des sources chaudes sur le terrain
-builderTools.tools.Rubble.name = Pinceau de décombres
-builderTools.tools.Rubble.description = Permet de peindre des zones de décombres sur le terrain
 builderTools.tools.RuinRoofs.name = Pinceau de ruines
 builderTools.tools.RuinRoofs.description = Permet de peindre des ruines sur le terrain
 builderTools.tools.Tentacle.name = Pinceau de tentacules
@@ -432,6 +355,28 @@ builderTools.imageImport.error = Échec de l'importation de l'image : {message}
 builderTools.commands.importimage.desc = Importe un fichier image en tant qu'art de blocs (pixel art)
 builderTools.rotate.invalidBlockType = Rotation invalide, aucun type de bloc (BlockType) trouvé : {blockType}
 
+builderTools.entityTool.cannotTargetPlayer = [TMP] Impossible d'utiliser les actions de l'outil d'entité sur les joueurs.
+builderTools.tools.Cave.name = Brosse de Grotte
+builderTools.tools.Cave.description = Permet à l'utilisateur de former des grottes lors de l'utilisation.
+builderTools.tools.Decoration.name = Brosse de Décoration
+builderTools.tools.Decoration.description = Permet à l'utilisateur de peindre des décorations sur la zone.
+
+builderTools.tools.Layers.args.kSkipLayerOne.name = [TMP] Ignorer la Couche 1
+builderTools.tools.Layers.args.kSkipLayerOne.description = [TMP] Si activé, la couche un contribue au calcul de la profondeur mais ne place pas de blocs.
+builderTools.tools.Layers.args.lSkipLayerTwo.name = [TMP] Ignorer la Couche 2
+builderTools.tools.Layers.args.lSkipLayerTwo.description = [TMP] Si activé, la couche deux contribue au calcul de la profondeur mais ne place pas de blocs.
+builderTools.tools.Layers.args.mSkipLayerThree.name = [TMP] Ignorer la Couche 3
+builderTools.tools.Layers.args.mSkipLayerThree.description = [TMP] Si activé, la couche trois contribue au calcul de la profondeur mais ne place pas de blocs.
+
+builderTools.tools.Paint.args.SurfaceMaterialWidth.name = Largeur
+builderTools.tools.Paint.args.aCaveBlocks.name = Blocs de Grotte
+builderTools.tools.Paint.args.aCaveBlocksDecoration.name = Décorations de Blocs de Grotte
+builderTools.tools.Paint.args.aCaveBlocksDecorationDensity.name = Densité
+builderTools.tools.Paint.args.aPathGroundBlocks.name = Blocs de Chemin
+builderTools.tools.Paint.args.aPathGroundBlocks.description = Les blocs pour créer le chemin principal.
+builderTools.tools.Paint.args.aaaClearObstacles.name = Effacer les Obstacles
+builderTools.tools.Paint.args.abNumPrefabs.name = Nombre de Décorations
+builderTools.tools.Paint.args.abPrefabSpacing.name = Espacement des Décorations
 
 # === chat ===
 
@@ -656,11 +601,8 @@ commands.paste.desc = Coller le contenu de votre presse-papiers
 commands.pos1.desc = Définir la première position de votre sélection
 commands.pos2.desc = Définir la deuxième position de votre sélection
 commands.redo.desc = Rétablir le dernier changement
-commands.clearEntities.desc = Supprimer toutes les entités dans la sélection actuelle
-commands.clearEntities.noSelection = Vous n'avez rien sélectionné !
 commands.repairfillers.desc = Réparer les blocs de remplissage (fillers) dans la sélection
 commands.replace.desc = Remplacer une sélection de blocs spécifiques par un autre bloc
-commands.clearEntities.cleared = {count, plural, one {1 entité supprimée} other {{count, number} entités supprimées}} de la sélection
 commands.replace.from.desc = Les types de blocs à remplacer (séparés par des virgules) ou un motif Regex
 commands.replace.toBlock.desc = Le type de bloc par lequel remplacer
 commands.replace.regex.desc = Utiliser la correspondance Regex (l'argument "From" est traité comme un motif Regex)
@@ -810,11 +752,7 @@ commands.editprefab.load.axis.desc = L'axe le long duquel plusieurs Prefabs sero
 commands.editprefab.load.axis.default = L'axe X
 commands.editprefab.load.path.desc = Le répertoire de base pour les assets de Prefab
 commands.editprefab.load.path.default.desc = Le répertoire de base des Prefabs du serveur
-commands.memories.setCount.desc = [TMP] Définir le nombre de mémoires enregistrées pour le test
 commands.editprefab.load.alignment.desc = Comment aligner la position des Prefabs (soit par les faces avant, soit par les ancres)
-commands.memories.setCount.success = [TMP] Nombre de souvenirs enregistrés défini sur {actual, number} (demandé : {requested, number})
-commands.memories.setCount.count.desc = [TMP] Le nombre de souvenirs à enregistrer
-commands.memories.setCount.invalid = [TMP] Nombre invalide. Doit être supérieur ou égal à 0.
 commands.editprefab.load.alignment.default.desc = Aligner les ancres
 commands.editprefab.load.recursive.desc = Parcourir récursivement tous les sous-répertoires pour trouver les Prefabs à charger
 commands.editprefab.load.error.prefabNotFound = Aucun Prefab trouvé au chemin spécifié : {path}
@@ -1454,13 +1392,9 @@ commands.profiler.unableConfigurePath = [Profiler] Impossible de configurer le c
 commands.profiler.notFound = [Profiler] Impossible de trouver le profiler. Exécutez /profile download pour le télécharger.
 commands.profiler.alreadyAttached = [Profiler] Le profiler est déjà attaché !
 commands.profiler.attaching = [Profiler] Attachement du profiler !
-commands.parsing.argtype.playerUuidLookup.name = UUID/Nom d'utilisateur du joueur (avec recherche)
-commands.parsing.argtype.playerUuidLookup.usage = Un UUID ou un nom d'utilisateur de joueur. S'il n'est pas trouvé localement, une recherche à distance sera effectuée via le Service de Profil (Profile Service).
 commands.profiler.attached = [Profiler] Profiler attaché !
 commands.profiler.processReturned = [Profiler] Le processus d'attachement du profiler a renvoyé : {process}
 commands.profiler.warning = [Profiler] Avertissement : {warning}
-commands.parsing.argtype.playerUuidLookup.notFound = Le joueur '{input}' n'a pas été trouvé localement ou via la recherche à distance.
-commands.parsing.argtype.playerUuidLookup.lookupError = Échec de la recherche de '{input}' : {error}
 commands.profiler.success = [Profiler] {success}
 commands.profiler.failure = [Profiler] {failure}
 commands.profiler.start = [Profiler] {start}
@@ -1657,22 +1591,6 @@ commands.worldmap.viewradius.remove.desc = Retirer l'outrepassage du rayon de vi
 commands.worldmap.viewradius.remove.noOverride = Aucun outrepassage du rayon de vision défini
 commands.worldmap.viewradius.remove.success = Outrepassage du rayon de vision de la carte retiré
 commands.update.desc = Commandes pour mettre à jour les assets et prefabs via Git
-commands.update.assets.desc = Commandes pour mettre à jour les assets via Git
-commands.update.assets.status.desc = Vérifier le statut Git pour les assets
-commands.update.assets.reset.desc = Réinitialiser les assets sur le HEAD
-commands.update.assets.pull.desc = Récupérer (pull) les assets depuis Git
-commands.update.prefabs.desc = Commandes pour mettre à jour les prefabs via Git
-commands.update.prefabs.status.desc = Vérifier le statut Git pour les prefabs
-commands.update.prefabs.commit.desc = Commiter les modifications des prefabs
-commands.update.prefabs.pull.desc = Récupérer (pull) les prefabs depuis Git
-commands.update.prefabs.push.desc = Envoyer (push) les prefabs vers Git
-commands.update.prefabs.all.desc = Effectuer toutes les opérations Git (commit, pull, push) pour les prefabs
-commands.update.running = Exécution de `{cmd}`
-commands.update.runningCmd = Exécution de `{cmd}`
-commands.update.runningStdOut = `{cmd}` stdout : {line}
-commands.update.runningStdErr = `{cmd}` stderr : {line}
-commands.update.done = `{cmd}` terminé !
-commands.update.failed = L'exécution de `{cmd}` a échoué ! {msg}
 commands.entity.dump.desc = Extraire (dump) les données sauvegardées d'une entité
 commands.entity.dump.noEntityWithUuid = Aucune entité trouvée avec l'UUID {uuid} !
 commands.entity.dump.badArgument = ID d'entité (int) ou UUID attendu, mais reçu : '{arg}'
@@ -2831,6 +2749,20 @@ commands.droplist.result.item = - {itemName} x{itemQuantity}
 commands.droplist.empty = Aucun butin pour la liste '{droplistId}' !
 commands.droplist.notFound = Aucun asset de liste de butin trouvé pour l'ID '{droplistId}' !
 commands.droplist.set.count.desc = Nombre de fois que la simulation doit être exécutée
+commands.git.desc = Commandes pour les opérations Git sur les assets et prefabs
+commands.git.assets.desc = Commandes pour mettre à jour les assets via Git
+commands.git.assets.pull.desc = Récupérer (pull) les assets depuis Git
+commands.git.assets.reset.desc = Réinitialiser les assets sur le HEAD
+commands.git.assets.status.desc = Vérifier le statut Git pour les assets
+commands.git.done = `{cmd}` Terminé !
+commands.git.failed = Échec de l'exécution de `{cmd}` ! {msg}
+commands.update.status.desc = [TMP] Afficher la version actuelle et le statut de la mise à jour
+commands.update.check.desc = [TMP] Vérifier les mises à jour disponibles
+commands.update.download.desc = [TMP] Télécharger une mise à jour disponible vers le dossier staging
+commands.update.apply.desc = [TMP] Appliquer une mise à jour préparée et redémarrer le serveur
+commands.update.update_available = [TMP] Mise à jour disponible : {latest} (actuelle : {current})\nLancez '/update download' pour préparer la mise à jour.
+commands.update.download_progress = [TMP] Progression du téléchargement : {percent}% ({downloaded} / {total})
+commands.update.applying = [TMP] Application de la mise à jour {version}...\nLe serveur va s'éteindre et redémarrer avec la nouvelle version.
 
 # === customUI ===
 
@@ -4007,7 +3939,6 @@ items.Furniture_Temple_Light_Chest_Large.name = Grand coffre du temple de la lum
 items.Furniture_Temple_Light_Chest_Small.name = Petit coffre du temple de la lumière
 items.Furniture_Temple_Light_Door.name = Porte du temple de la lumière
 items.Furniture_Temple_Light_Door_Large.name = Grande porte du temple de la lumière
-items.Furniture_Temple_Light_Door_Medilum.name = Porte moyenne du temple de la lumière
 items.Furniture_Temple_Light_Ladder.name = Échelle du temple de la lumière
 items.Furniture_Temple_Light_Lantern.name = Lanterne du temple de la lumière
 items.Furniture_Temple_Light_Painting.name = Peinture du temple de la lumière
@@ -4995,8 +4926,6 @@ items.Prototype_Ancient_Sign_Hanging.name = Prototype - Enseigne ancienne suspen
 items.Prototype_Bookshelf_Bottom_Edge.name = Prototype - Bibliothèque - Bord inférieur
 items.Prototype_Bookshelf_Bottom_Left_Corner.name = Prototype - Bibliothèque - Coin inférieur gauche
 items.Prototype_Bookshelf_Bottom_Right_Corner.name = Prototype - Bibliothèque - Coin inférieur droit
-items.Prototype_Bookshelf_Edge_L.name = Prototype - Bibliothèque - Bord G
-items.Prototype_Bookshelf_Edge_R.name = Prototype - Bibliothèque - Bord D
 items.Prototype_Bookshelf_LCorner_Single.name = Prototype - Bibliothèque - Coin en L unique
 items.Prototype_Bookshelf_LCorner_Vertical_Bottom.name = Prototype - Bibliothèque - Coin en L vertical bas
 items.Prototype_Bookshelf_LCorner_Vertical_Middle.name = Prototype - Bibliothèque - Coin en L vertical milieu
@@ -5166,7 +5095,7 @@ items.Rock_Basalt_Brick_Smooth.name = Brique de basalte - Lisse
 items.Rock_Basalt_Brick_Smooth_Half.name = Dalle en brique de basalte - Lisse
 items.Rock_Basalt_Brick_Stairs.name = Escaliers en brique de basalte
 items.Rock_Basalt_Brick_Wall.name = Muret en brique de basalte
-items.Rock_Basalt_Cobble.name = Pierre de basalte
+items.Rock_Basalt_Cobble.name = pierre de basalte
 items.Rock_Basalt_Cobble_Beam.name = Poutre en pierre de basalte
 items.Rock_Basalt_Cobble_Half.name = Dalle en pierre de basalte
 items.Rock_Basalt_Cobble_Roof.name = Toit en pierre de basalte
@@ -5196,7 +5125,7 @@ items.Rock_Calcite_Brick_Smooth.name = Brique de calcite - Lisse
 items.Rock_Calcite_Brick_Smooth_Half.name = Dalle en brique de calcite - Lisse
 items.Rock_Calcite_Brick_Stairs.name = Escaliers en brique de calcite
 items.Rock_Calcite_Brick_Wall.name = Muret en brique de calcite
-items.Rock_Calcite_Cobble.name = Pierre de calcite
+items.Rock_Calcite_Cobble.name = pierre de calcite
 items.Rock_Calcite_Cobble_Beam.name = Poutre en pierre de calcite
 items.Rock_Calcite_Cobble_Half.name = Dalle en pierre de calcite
 items.Rock_Calcite_Cobble_Roof.name = Toit en pierre de calcite
@@ -5288,7 +5217,7 @@ items.Rock_Marble_Brick_Smooth.name = Brique de marbre - Lisse
 items.Rock_Marble_Brick_Smooth_Half.name = Dalle en brique de marbre - Lisse
 items.Rock_Marble_Brick_Stairs.name = Escaliers en brique de marbre
 items.Rock_Marble_Brick_Wall.name = Muret en brique de marbre
-items.Rock_Marble_Cobble.name = Pierre de marbre
+items.Rock_Marble_Cobble.name = pierre de marbre
 items.Rock_Marble_Cobble_Beam.name = Poutre en pierre de marbre
 items.Rock_Marble_Cobble_Half.name = Dalle en pierre de marbre
 items.Rock_Marble_Cobble_Roof.name = Toit en pierre de marbre
@@ -5317,7 +5246,7 @@ items.Rock_Quartzite_Brick_Smooth.name = Brique de quartzite - Lisse
 items.Rock_Quartzite_Brick_Smooth_Half.name = Dalle en brique de quartzite - Lisse
 items.Rock_Quartzite_Brick_Stairs.name = Escaliers en brique de quartzite
 items.Rock_Quartzite_Brick_Wall.name = Muret en brique de quartzite
-items.Rock_Quartzite_Cobble.name = Pierre de quartzite
+items.Rock_Quartzite_Cobble.name = pierre de quartzite
 items.Rock_Quartzite_Cobble_Beam.name = Poutre en pierre de quartzite
 items.Rock_Quartzite_Cobble_Half.name = Dalle en pierre de quartzite
 items.Rock_Quartzite_Cobble_Roof.name = Toit en pierre de quartzite
@@ -5346,7 +5275,7 @@ items.Rock_Sandstone_Brick_Smooth.name = Brique de grès - Lisse
 items.Rock_Sandstone_Brick_Smooth_Half.name = Dalle en brique de grès - Lisse
 items.Rock_Sandstone_Brick_Stairs.name = Escaliers en brique de grès
 items.Rock_Sandstone_Brick_Wall.name = Muret en brique de grès
-items.Rock_Sandstone_Cobble.name = Pierre de grès
+items.Rock_Sandstone_Cobble.name = pierre de grès
 items.Rock_Sandstone_Cobble_Beam.name = Poutre en pierre de grès
 items.Rock_Sandstone_Cobble_Half.name = Dalle en pierre de grès
 items.Rock_Sandstone_Cobble_Roof.name = Toit en pierre de grès
@@ -5373,7 +5302,7 @@ items.Rock_Sandstone_Red_Brick_Smooth.name = Brique de grès rouge - Lisse
 items.Rock_Sandstone_Red_Brick_Smooth_Half.name = Dalle en brique de grès rouge - Lisse
 items.Rock_Sandstone_Red_Brick_Stairs.name = Escaliers en brique de grès rouge
 items.Rock_Sandstone_Red_Brick_Wall.name = Muret en brique de grès rouge
-items.Rock_Sandstone_Red_Cobble.name = Pierre de grès rouge
+items.Rock_Sandstone_Red_Cobble.name = pierre de grès rouge
 items.Rock_Sandstone_Red_Cobble_Beam.name = Poutre en pierre de grès rouge
 items.Rock_Sandstone_Red_Cobble_Half.name = Dalle en pierre de grès rouge
 items.Rock_Sandstone_Red_Cobble_Roof.name = Toit en pierre de grès rouge
@@ -5404,7 +5333,7 @@ items.Rock_Sandstone_White_Brick_Smooth.name = Brique de grès blanc - Lisse
 items.Rock_Sandstone_White_Brick_Smooth_Half.name = Dalle en brique de grès blanc - Lisse
 items.Rock_Sandstone_White_Brick_Stairs.name = Escaliers en brique de grès blanc
 items.Rock_Sandstone_White_Brick_Wall.name = Muret en brique de grès blanc
-items.Rock_Sandstone_White_Cobble.name = Pierre de grès blanc
+items.Rock_Sandstone_White_Cobble.name = pierre de grès blanc
 items.Rock_Sandstone_White_Cobble_Beam.name = Poutre en pierre de grès blanc
 items.Rock_Sandstone_White_Cobble_Half.name = Dalle en pierre de grès blanc
 items.Rock_Sandstone_White_Cobble_Roof.name = Toit en pierre de grès blanc
@@ -5433,7 +5362,7 @@ items.Rock_Shale_Brick_Smooth.name = Brique de schiste argileux - Lisse
 items.Rock_Shale_Brick_Smooth_Half.name = Dalle en brique de schiste argileux - Lisse
 items.Rock_Shale_Brick_Stairs.name = Escaliers en brique de schiste argileux
 items.Rock_Shale_Brick_Wall.name = Muret en brique de schiste argileux
-items.Rock_Shale_Cobble.name = Pierre de schiste argileux
+items.Rock_Shale_Cobble.name = pierre de schiste argileux
 items.Rock_Shale_Cobble_Beam.name = Poutre en pierre de schiste argileux
 items.Rock_Shale_Cobble_Half.name = Dalle en pierre de schiste argileux
 items.Rock_Shale_Cobble_Roof.name = Toit en pierre de schiste argileux
@@ -5446,7 +5375,7 @@ items.Rock_Shale_Cobble_Wall.name = Muret en pierre de schiste argileux
 items.Rock_Shale_Stalactites_Large.name = Grande stalactite de schiste argileux
 items.Rock_Shale_Stalactites_Small.name = Petite stalactite de schiste argileux
 items.Rock_Slate.name = Ardoise
-items.Rock_Slate_Cobble.name = Pierre d'ardoise
+items.Rock_Slate_Cobble.name = pierre d'ardoise
 items.Rock_Slate_Cobble_Beam.name = Poutre en pierre d'ardoise
 items.Rock_Slate_Cobble_Half.name = Dalle en pierre d'ardoise
 items.Rock_Slate_Cobble_Roof.name = Toit en pierre d'ardoise
@@ -5456,7 +5385,6 @@ items.Rock_Slate_Cobble_Roof_Shallow.name = Toit en pierre d'ardoise - Inclinais
 items.Rock_Slate_Cobble_Roof_Steep.name = Toit en pierre d'ardoise - Escarpé
 items.Rock_Slate_Cobble_Stairs.name = Escaliers en pierre d'ardoise
 items.Rock_Slate_Cobble_Wall.name = Muret en pierre d'ardoise
-items.Rock_Slate_Cracked.name = Ardoise fissurée
 items.Rock_Slate_Stalactite_Large.name = Grande stalactite d'ardoise
 items.Rock_Slate_Stalactite_Small.name = Petite stalactite d'ardoise
 items.Rock_Stone.name = Pierre
@@ -5479,11 +5407,11 @@ items.Rock_Stone_Brick_Smooth.name = Brique de pierre - Lisse
 items.Rock_Stone_Brick_Smooth_Half.name = Dalle en brique de pierre - Lisse
 items.Rock_Stone_Brick_Stairs.name = Escaliers en brique de pierre
 items.Rock_Stone_Brick_Wall.name = Muret en brique de pierre
-items.Rock_Stone_Cobble.name = Pierre
-items.Rock_Stone_Cobble_Corner.name = Pierre - Coin
+items.Rock_Stone_Cobble.name = pierre
+items.Rock_Stone_Cobble_Corner.name = pierre - Coin
 items.Rock_Stone_Cobble_Beam.name = Poutre en pierre
 items.Rock_Stone_Cobble_Half.name = Dalle en pierre
-items.Rock_Stone_Cobble_Mossy.name = Pierre moussue
+items.Rock_Stone_Cobble_Mossy.name = pierre moussue
 items.Rock_Stone_Cobble_Mossy_Half.name = Dalle en pierre moussue
 items.Rock_Stone_Cobble_Roof.name = Toit en pierre
 items.Rock_Stone_Cobble_Roof_Flat.name = Toit en pierre - Plat
@@ -5513,7 +5441,7 @@ items.Rock_Volcanic_Brick_Smooth.name = Brique volcanique - Lisse
 items.Rock_Volcanic_Brick_Smooth_Half.name = Dalle en brique volcanique - Lisse
 items.Rock_Volcanic_Brick_Stairs.name = Escaliers en brique volcanique
 items.Rock_Volcanic_Brick_Wall.name = Muret en brique volcanique
-items.Rock_Volcanic_Cobble.name = Pierre volcanique
+items.Rock_Volcanic_Cobble.name = pierre volcanique
 items.Rock_Volcanic_Cobble_Beam.name = Poutre en pierre volcanique
 items.Rock_Volcanic_Cobble_Half.name = Dalle en pierre volcanique
 items.Rock_Volcanic_Cobble_Roof.name = Toit en pierre volcanique
@@ -5524,7 +5452,6 @@ items.Rock_Volcanic_Cobble_Roof_Steep.name = Toit en pierre volcanique - Escarp�
 items.Rock_Volcanic_Cobble_Stairs.name = Escaliers en pierre volcanique
 items.Rock_Volcanic_Cobble_Wall.name = Muret en pierre volcanique
 items.Rock_Volcanic_Cracked_Lava.name = Roche volcanique fissurée
-items.Rock_Volcanic_Cracked_Lava_Incandescent.name = Roche volcanique fissurée incandescente
 items.Rock_Volcanic_Cracked_Poisoned.name = Roche volcanique empoisonnée
 items.Rock_Volcanic_Half.name = Dalle de roche volcanique
 items.Rock_Volcanic_Stalactite_Large.name = Grande stalactite volcanique
@@ -6068,37 +5995,6 @@ items.Wood_Amber_Branch_Short.name = Branche d'ambre - Courte
 items.Wood_Amber_Roots.name = Racines d'ambre
 items.Wood_Amber_Trunk.name = Bloc de bois d'ambre
 items.Wood_Amber_Trunk_Full.name = Tronc d'ambre
-items.Wood_Amber_Trunk.description = Bois doré
-items.Wood_Ash_Trunk.description = Bois dur
-items.Wood_Aspen_Trunk.description = Bois tendre
-items.Wood_Azure_Trunk.description = Azuré
-items.Wood_Bamboo_Trunk.description = Bois tropical
-items.Wood_Banyan_Trunk.description = Bois tendre
-items.Wood_Beech_Trunk.description = Bois tendre
-items.Wood_Birch_Trunk.description = Bois clair
-items.Wood_Bottletree_Trunk.description = Bois sec
-items.Wood_Burnt_Trunk.description = Bois noir
-items.Wood_Camphor_Trunk.description = Bois clair
-items.Wood_Cedar_Trunk.description = Bois sombre
-items.Wood_Crystal_Trunk.description = Cristal
-items.Wood_Dry_Trunk.description = Bois sec
-items.Wood_Fig_Blue_Trunk.description = Bois rouge
-items.Wood_Fir_Trunk.description = Bois dur
-items.Wood_Fire_Trunk.description = Bois noir
-items.Wood_Gumboab_Trunk.description = Bois clair
-items.Wood_Ice_Trunk.description = Glace
-items.Wood_Jungle_Trunk.description = Bois vert
-items.Wood_Maple_Trunk.description = Bois rouge
-items.Wood_Oak_Trunk.description = Bois dur
-items.Wood_Palm_Trunk.description = Bois doré
-items.Wood_Palo_Trunk.description = Bois vert
-items.Wood_Petrified_Trunk.description = Bois mort
-items.Wood_Poisoned_Trunk.description = Bois mort
-items.Wood_Redwood_Trunk.description = Bois rouge
-items.Wood_Sallow_Trunk.description = Bois doré
-items.Wood_Spiral_Trunk.description = Spiral
-items.Wood_Windwillow_Trunk.description = Saule des vents
-items.Wood_Wisteria_Wild_Trunk.description = Bois sombre
 items.Wood_Ash_Branch_Corner.name = Branche de frêne - Coin
 items.Wood_Ash_Branch_Long.name = Branche de frêne - Longue
 items.Wood_Ash_Branch_Short.name = Branche de frêne - Courte
@@ -6612,7 +6508,8 @@ items.Recipe_Food_Salad_Caesar.name = [TMP] Recette : Salade César
 items.Recipe_Food_Salad_Caesar.description = [TMP] Enseigne la recette de : <item is="Food_Salad_Caesar"/>.\n\nRestaure immédiatement <color is="#ffffff">15%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé III</color>\n• <color is="#ffffff">Boost d'endurance III</color>\n\nDurée : <color is="#ffffff">6:00</color>
 items.Food_Pie_Pumpkin.description = [TMP] Restaure immédiatement <color is="#ffffff">15%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé III</color>\n• <color is="#ffffff">Boost d'endurance III</color>\n\nDurée : <color is="#ffffff">6:00</color>
 items.Food_Wildmeat_Cooked.description = [TMP] Restaure immédiatement <color is="#ffffff">10%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé II</color>\n• <color is="#ffffff">Boost de santé II</color>\n\nDurée : <color is="#ffffff">2:30</color>
-items.Food_Fish_Grilled.descriptioWood_Amber_Trunk= [TMP] Restaure immédiatement <color is="#ffffff">10%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé II</color>\n• <color is="#ffffff">Boost de santé II</color>\n\nDurée : <color is="#ffffff">2:30</color>
+items.Food_Fish_Grilled.description = [TMP] Restaure immédiatement <color is="#ffffff">10%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé II</color>\n• <color is="#ffffff">Boost de santé II</color>\n\nDurée : <color is="#ffffff">2:30</color>
+items.Food_Kebab_Meat.description = [TMP] Restaure immédiatement <color is="#ffffff">10%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé II</color>\n• <color is="#ffffff">Boost de santé II</color>\n\nDurée : <color is="#ffffff">2:30</color>
 items.Food_Pie_Meat.description = [TMP] Restaure immédiatement <color is="#ffffff">15%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé III</color>\n• <color is="#ffffff">Boost de santé III</color>\n\nDurée : <color is="#ffffff">6:00</color>
 items.Food_Wildmeat_Raw.description = [TMP] Restaure immédiatement <color is="#ffffff">5%</color> de santé.
 items.Food_Fish_Raw.description = [TMP] Restaure immédiatement <color is="#ffffff">5%</color> de santé.
@@ -6622,13 +6519,26 @@ items.Food_Beef_Raw.description = [TMP] Restaure immédiatement <color is="#ffff
 items.Food_Bread.description = [TMP] Restaure immédiatement <color is="#ffffff">15%</color> de santé.
 items.Food_Popcorn.description = [TMP] Restaure immédiatement <color is="#ffffff">15%</color> de santé.
 items.Food_Cheese.description = [TMP] Restaure immédiatement <color is="#ffffff">15%</color> de santé.
-items.Plant_Fruit_Azure.description = Restaure instantanément <color is="#ffffff">5%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé I</color>\n\nDurée : <color is="#ffffff">0:45</color>
-items.Plant_Fruit_Coconut.description = Restaure instantanément <color is="#ffffff">5%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé I</color>\n\nDurée : <color is="#ffffff">0:45</color>
-items.Plant_Fruit_Mango.description = Restaure instantanément <color is="#ffffff">5%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé I</color>\n\nDurée : <color is="#ffffff">0:45</color>
-items.Plant_Fruit_Pinkberry.description = Restaure instantanément <color is="#ffffff">5%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé I</color>\n\nDurée : <color is="#ffffff">0:45</color>
-items.Plant_Fruit_Poison.description = Restaure instantanément <color is="#ffffff">5%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé I</color>\n\nDurée : <color is="#ffffff">0:45</color>
-items.Plant_Fruit_Spiral.description = Restaure instantanément <color is="#ffffff">5%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé I</color>\n\nDurée : <color is="#ffffff">0:45</color>
-items.Plant_Fruit_Windwillow.description = Restaure instantanément <color is="#ffffff">5%</color> de santé et octroie :\n\n• <color is="#ffffff">Régén. de santé I</color>\n\nDurée : <color is="#ffffff">0:45</color>
+
+# === Objets Spéciaux ===
+items.Editor_Anchor.description = [TMP] Marque le point d'ancrage des prefabs. Placez-le à la position d'origine lors de la création de prefabs.
+items.Editor_Empty.description = [TMP] Représente un espace vide dans les prefabs. Utilisez-le pour effacer explicitement des blocs lors du placement d'un prefab.
+items.Greenscreen.description = [TMP] Un bloc de fond vert uni pour l'enregistrement de machinimas et la production vidéo.
+items.Weapon_Spellbook_Rekindle_Embers.name = Grimoire : Raviver les Braises
+items.Weapon_Spellbook_Rekindle_Embers.description = Invoque des sbires squelettiques à partir des tas d'os à proximité.
+items.Tool_Hoe_Thorium.name = Houe en Thorium
+
+# === Types de Ressources (Suite) ===
+resourceType.Wood_Tropicalwood_Greenwood.name = Tronc de bois tropical ou de bois vert
+resourceType.Wood_Tropicalwood_Greenwood_Trunk.name = Tronc de bois tropical ou de bois vert
+resourceType.Wood_Tropicalwood_Trunk.name = Bûche de bois tropical
+resourceType.Wood_Tropicalwood_Trunk.description = Arbres tropicaux :\n• <color is="#ffffff">Bambou</color>
+resourceType.Wood_Trunk.name = N'importe quelle bûche d'arbre
+
+# === Système de Mise à jour (Notifications) ===
+update.auto_apply_now = [TMP] La mise à jour {version} est en cours d'application. Redémarrage du serveur...
+update.auto_apply_warning = [TMP] La mise à jour {version} sera automatiquement appliquée dans {minutes, plural, one {1 minute} other {{minutes} minutes}}. Veuillez sauvegarder votre progression.
+update.notify_players = [TMP] La mise à jour du serveur {version} est disponible. Un administrateur peut lancer '/update download' pour la préparer.
 
 # === map ===
 
@@ -6655,25 +6565,13 @@ map.region.ForgottenTemple = Temple oublié
 
 # === memories ===
 
-memories.categories.Other.title = Divers
 memories.categories.Avian.title = Aviaires
-memories.categories.Raptor.title = Rapaces
-memories.categories.Fowl.title = Volailles
 memories.categories.Freshwater.title = Eau douce
-memories.categories.Marine.title = Créatures marines
 memories.categories.Abyssal.title = Abyssal
-memories.categories.Mammal.title = Mammifères
 memories.categories.Mythic.title = Mythiques
 memories.categories.Reptile.title = Reptiles
-memories.categories.Vermin.title = Vermines
 memories.categories.Critter.title = Bestioles
-memories.categories.Etheral.title = Élémentaires éthérés
-memories.categories.Corporeal.title = Élémentaires corporels
 memories.categories.Livestock.title = Bétail
-memories.categories.Fiend.title = Démons
-memories.categories.Skeleton.title = Squelettes
-memories.categories.Zombie.title = Zombies
-memories.categories.Spirit.title = Esprits
 memories.categories.Voidspawn.title = Engeance du Néant
 memories.categories.Voidtaken.title = Corrompus par le Néant
 memories.categories.Scarak.title = Scaraks
@@ -6707,13 +6605,6 @@ memories.general.memoriesLevelMax = Niveau de souvenirs : {level} (Maximum attei
 memories.general.totalCollected = Total collecté :
 memories.general.foundIn = Trouvé à {location}, {time}
 
-memories.names.Deer = Cerf
-
-memories.unlock.title = Vous avez débloqué la fonction Souvenirs !
-memories.unlock.bullet1 = La malédiction du Néant garde Orbis prisonnière, mais il existe peut-être un moyen de la briser.
-memories.unlock.bullet2 = Une divinité repose au sein de ce Coeur d'Orbis ; recherchez les souvenirs des innombrables créatures d'Orbis et enregistrez-les ici pour restaurer sa volonté.
-memories.unlock.bullet3 = Votre inventaire peut désormais stocker un nombre limité de souvenirs dans une section spéciale. \nRapportez-les au Coeur d'Orbis pour débloquer diverses récompenses.
-memories.unlock.discoverMemories = Découvrir des souvenirs
 
 # === modules ===
 
@@ -6724,7 +6615,6 @@ modules.objective.task.completed = Vous avez terminé la tâche suivante :\n
 modules.objective.playerAlreadyDoingObjective = Vous poursuivez déjà l'objectif '{title}' !
 modules.objective.playerAlreadyDoingObjectiveLine = Vous poursuivez déjà la série d'objectifs '{id}' !
 modules.objective.task.alreadyInteractedWithNPC = Vous avez déjà interagi avec ce PNJ
-modules.reputation.reputationGroupNotFound = Groupe de réputation avec l'ID '{id}' introuvable !
 modules.reputation.valueForGroup = Groupe de réputation : '{id}' avec la valeur : '{value}'
 modules.reputation.success = Réputation du groupe '{id}' modifiée à la valeur '{value}' !
 modules.reputation.noRankFoundForValue = Aucun rang de réputation ne contient la valeur {value} !
@@ -6751,7 +6641,6 @@ modules.interaction.interactedWith = Interaction avec le type '{interactionType}
 modules.interaction.failedGetActiveSlot = Erreur dans getActiveSlot : {server} != {packet}
 modules.interaction.builderToolInteractionError = L'interaction BuilderTool a atteint le serveur, ce qui ne devrait pas arriver !
 modules.interaction.failedCheck = Échec de la vérification, suppression de la quantité
-modules.interaction.failedCheckItemNull = Échec de la vérification, l'objet n'est pas nul
 modules.interaction.failedCheckBlock = Échec de la vérification, bloc
 modules.interaction.failedCheckEmpty = Échec de la vérification, création d'un vide
 modules.interaction.failedCheckUnknown = Échec de la vérification, création d'un élément inconnu
@@ -6937,7 +6826,6 @@ npcRoles.Jellyfish_Blue.name = Méduse bleue
 npcRoles.Jellyfish_Cyan.name = Méduse turquoise
 npcRoles.Jellyfish_Green.name = Méduse verte
 npcRoles.Jellyfish_Man_Of_War.name = Physalie (Galère portugaise)
-
 npcRoles.Jellyfish_Red.name = Méduse rouge
 npcRoles.Jellyfish_Yellow.name = Méduse jaune
 npcRoles.Klops_Gentleman.name = Klops gentleman
@@ -7569,4 +7457,3 @@ universe.backup.error = Une erreur est survenue lors de la création d'une sauve
 
 world.spawn.notSet = Le monde '{worldName}' n'a pas de point d'apparition défini !
 world.notFound = Le monde '{worldName}' est introuvable !
-
